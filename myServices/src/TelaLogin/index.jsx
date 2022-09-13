@@ -1,26 +1,85 @@
 // import react-native from  react;
 import React from /* { useState }*/ "react";
-import { View, StyleSheet } from "react-native";
-import Estilos from "./estilos.js";
+import { Button, Text, View, TouchableOpacity } from "react-native";
+import { TextInput } from "react-native";
+import Styles from "./telaMenu/styles";
 
 export default function teste() {
   return (
-    <View>
-      {/* <View> */}
-      <h1>MyServices</h1>
+    <View style={Styles.background}>
+      <Text
+        style={{
+          color: "white",
+          fontSize: 50,
+          marginBottom: 180,
+        }}
+      >
+        MyServices
+      </Text>
       <View container>
-        <View item xs={12} style={Estilos.inputao}>
-          <label>Insira o Usuário</label> <br />
-          <input type="text" /> <br />
-          <label>Insira a senha</label>
+        <View item xs={12}>
+          <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
+            Insira o Usuário
+          </Text>
+          <TextInput style={Styles.buttonText} />
+
+          <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
+            Insira a senha
+          </Text>
+          <TextInput style={Styles.buttonText} />
           <br />
-          <input type="text" />
+          <View spacing={2} style={Styles.flexao}>
+            <View style={{ width: "50%" }}>
+              <TouchableOpacity
+                style={{
+                  borderWidth: 1,
+                  borderColor: "grey",
+                  backgroundColor: "purple",
+                  borderRadius: 30,
+                  alignItems: "center",
+                }}
+              >
+                <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
+                  Logar
+                </Text>
+              </TouchableOpacity>
+            </View>
+
+            <View style={{ width: "50%" }}>
+              <TouchableOpacity
+                style={{
+                  borderWidth: 1,
+                  borderColor: "grey",
+                  backgroundColor: "purple",
+                  borderRadius: 30,
+                  alignItems: "center",
+                }}
+              >
+                <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
+                  cadastrar-se
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
           <br />
-          <button>cadastrar-se</button>
-          <button>login</button>
+
+          <TouchableOpacity
+            style={{
+              borderWidth: 1,
+              borderColor: "grey",
+              backgroundColor: "purple",
+              borderRadius: 30,
+              alignItems: "center",
+            }}
+          >
+            <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
+              Recuperar senha
+            </Text>
+          </TouchableOpacity>
         </View>
       </View>
-      {/* </View> */}
     </View>
   );
 }
+
+// style={Styles.button}
