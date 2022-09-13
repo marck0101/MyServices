@@ -11,7 +11,7 @@ export default function teste() {
         style={{
           color: "white",
           fontSize: 50,
-          marginBottom: 180,
+          marginBottom: 60,
         }}
       >
         MyServices
@@ -27,7 +27,6 @@ export default function teste() {
             Insira a senha
           </Text>
           <TextInput style={Styles.buttonText} />
-          <br />
           <View spacing={2} style={Styles.flexao}>
             <View style={{ width: "50%" }}>
               <TouchableOpacity
@@ -37,6 +36,7 @@ export default function teste() {
                   backgroundColor: "purple",
                   borderRadius: 30,
                   alignItems: "center",
+                  marginTop: 15,
                 }}
               >
                 <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
@@ -53,6 +53,7 @@ export default function teste() {
                   backgroundColor: "purple",
                   borderRadius: 30,
                   alignItems: "center",
+                  marginTop: 15,
                 }}
               >
                 <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
@@ -61,7 +62,6 @@ export default function teste() {
               </TouchableOpacity>
             </View>
           </View>
-          <br />
 
           <TouchableOpacity
             style={{
@@ -70,6 +70,7 @@ export default function teste() {
               backgroundColor: "purple",
               borderRadius: 30,
               alignItems: "center",
+              marginTop: 15,
             }}
           >
             <Text style={{ marginLeft: 20, color: "white", fontSize: 20 }}>
